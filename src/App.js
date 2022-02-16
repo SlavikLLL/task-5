@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from "./components/Card";
+import Clock from "./components/Clock";
+import Fetch from "./components/Fetch";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="tasks">
+             <Card>
+               <Card.Title>Title</Card.Title>
+               <Card.Body>Body body body</Card.Body>
+           </Card>
+           <hr/>
+           <Clock />
+           <Fetch />
     </div>
+   
   );
 }
 
